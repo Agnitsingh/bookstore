@@ -1,0 +1,77 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #301934;;
+  color: #fff;
+  padding-inline: 45px;
+  border-bottom: 1px solid purple;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-link-alt {
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+      background-color: #2980b9;
+  }
+}
+
+.cart-btn {
+  position: relative;
+}
+.cart-btn span {
+  background: red;
+  padding: 2px 6px;
+  text-align: center;
+  border-radius: 24rem;
+
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}

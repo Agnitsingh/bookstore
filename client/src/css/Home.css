@@ -1,0 +1,183 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    background-color: #301934;
+    color: #ffc107;
+    height: 92vh;
+    padding-inline: 30px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    word-spacing: 1%;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    /* background: url('Images/home page.png') center; */
+    background: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.add-to-cart button {
+    border-radius: 9999px;
+    scale: 0.8;
+}
+
+.add-to-cart2 {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.add-to-cart2 button {
+    border-radius: 9999px;
+    min-width: 100px;
+    margin: 0.25rem;
+}
+
+.cart {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    z-index: 0;
+}
+
+.cart-list {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    place-items: center;
+
+    .book-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.cart-list .empty {
+    min-height: 100%;
+}
+
+.checkout {
+    position: sticky;
+    z-index: 999;
+    bottom: 0;
+    padding: 0rem 2rem;
+    width: 95%;
+    height: 100px;
+    background: white;
+    border-top: 1px solid #dddddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout .sss {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.ssss {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.checkout a, .recommendations button, .hero a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #2980b9;
+    }
+}
+
+.confirm {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.high-ratings, .recommendations {
+    width: 100%;
+
+    h1 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.recommendations {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    form {
+        margin-top: 1rem;
+        display: flex;
+        flex-flow: column;
+        gap: 0.25rem;
+        
+        input {
+            padding: 0.25rem 0rem;
+        }
+
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+
+    svg {
+        scale: 0.8;
+        stroke: yellow;
+        fill: yellow;
+    }
+}
+
+.heading {
+    border-bottom: 1px solid #444444;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.books {
+    padding-top: 1rem;
+}
